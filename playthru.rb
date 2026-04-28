@@ -9,8 +9,8 @@ class Playthru < Formula
   license "MIT"
   depends_on :macos
 
-  url "https://github.com/thommorais/playthru/releases/download/v0.1.0/playthru_0.1.0_darwin.tar.gz"
-  sha256 "6ae70504cdfe4f8169d01ffb910795020185524a7ef0cf55f3018ebbd2e25369"
+  url "https://github.com/thommorais/playthru-releases/releases/download/v0.1.0/playthru_0.1.0_darwin.tar.gz", using: CurlDownloadStrategy
+  sha256 "cf05d1b051e30b90b6dfa12c9e22d5e5df5546ecc68c21dee77345158ba672ea"
 
   define_method(:install) do
     bin.install "playthru"
